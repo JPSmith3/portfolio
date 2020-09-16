@@ -1,0 +1,108 @@
+.image {
+    position: relative;
+    max-width: 300px;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+.image__img{
+    display: block;
+    width: 100%;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #006994;
+    color: white;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+.image__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover{
+    opacity:1;
+}
+.image__overlay:hover > * {
+    transform: translateY(0px);
+}
+
+.image__title{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.image__description{
+    font-size: 1.25em;
+    margin-top: 0.25em;
+    padding: 20px;
+}
+
+.content {
+    padding: 10px;
+    /* max-width: 1080px; */
+    max-width: 1080px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a { 
+    color: inherit;
+    text-decoration: none; /* no underline */
+    padding: 20px;
+ } 
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    max-width: 900px;
+    height: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+#footer{
+    background: #006994;
+    color: white;
+    padding: 17px;
+    font-size: 15px;
+    position: relative;
+    clear: both;
+    margin-top: 100px;
+    height: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
